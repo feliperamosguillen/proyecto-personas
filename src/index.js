@@ -18,7 +18,7 @@ const store = createStore(reducers, applyMiddleware(...middleware));
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <App history={history} />
   </Provider>,
   document.getElementById("root")
 );
